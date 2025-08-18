@@ -1,0 +1,107 @@
+body{
+    background: #fcffe4;
+}
+h1.adminInsertHeading {
+background: #d5d5d5;
+text-align:center;
+border-radius: 15px;
+}
+
+
+.myCart-contents-contents_main {
+width: 80vw;
+}
+
+
+
+.users table thead {
+border-bottom: 2px solid #000000;
+border-top: 2px solid #000000;
+background: rgb(255 148 156);
+}
+
+
+.users table thead tr th {
+padding: 10px 20px;
+}
+.users table tbody{
+background: #3d3d3d;
+color: white;
+}
+
+
+.users table tbody tr {
+border-bottom: 2px solid black;
+}
+.myCart-contents {
+margin-top: 80px;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.myCart-contents-contents_main .col-1{flex-basis: 80%;/* overflow: hidden; */}
+.myCart-contents-contents_main .col-2{flex-basis: 18%;background: #dcfff3;margin-left: 15px;border-radius: 7px;min-height: 70vh;text-align: center;padding: 20px 10px;/* flex-basis: 18px !important; */}
+.users table {/* padding-left: 74px; *//* margin-left: 20px; */width: 100%;text-align: center;}
+.proImg img{
+width: 100px;
+height: 100px;
+}
+.cartForm{
+padding-left: 40px;
+}
+.cartForm #myCartQty{
+display: block;
+width: 150px;
+margin-bottom: 10px;
+border-radius: 10px;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+background: #cbf8f9;
+}
+.cartForm #myCartBtn{
+width: 150px;
+display: block;
+border-radius: 13px;
+background: #f3f382;
+font-size: 18px;
+}
+.deleteMyCart{
+color: #cce8cb;
+}
+.myTotal{
+margin-top:20px;
+
+}
+.mypurchaseBtn{
+background: #0b95f5;
+width: 100%;
+border-radius: 4px;
+margin-top: 20px;
+color: #fff;
+font-size: 17px;
+}
+#myCartdltAlert{margin-top:51px;}
+.emptyCart{
+text-align: center;
+color: red;
+font-size: xx-large;
+font-weight: bold;
+}
+.margin-top{
+        margin-top: 50px;
+    }
+    .placedOrder p{
+        color: green;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #cancelOrder{
+        background: red;
+    }
+    .paymentMethod h3{
+
+    }
+    .paymentMethod img{
+        width: 80px;
+    }

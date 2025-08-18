@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.adminpanelcontainer{
+    background: url("image/Men\ Clear\ Frame\ Anti-blue\ Light\ Eyeglasses.jpeg") no-repeat center center fixed;
+   background-size: cover;
+   height: 100vh;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.admin-login-header{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.admin-login-header h1{
+    font-size: 100px;
+    color: rgba(6, 171, 85, 0.8);
+}
+.admin-login-header h3{
+    font-size: 60px;
+    color: rgba(1, 26, 116, 0.8);
+    display: inline-block;
+}
+.admin-login-header h3:after{
+    content: '';
+    display: block;
+    height: 5px;
+    background: white;
+    margin: 0 auto;
+}
+.admin-login-system {
+margin: 30px;
+}
+.admin-login-system form{
+    margin: 0 auto;
+    width: 450px;
+    background: rgba(0,0,0, 0.5);
+    padding: 50px;
+    border: 2px solid white;
+    border-radius: 8px;
+   }
+.adminInputsConatainer label{
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.adminInputsConatainer input{height: 30px;width: 100%;border: 2px solid rgba(131, 178, 235, 0.5);font-size: 20px;text-align: center;margin-bottom: 30px;}
+.adminLoginBtn{
+    margin-top: 10px;
+    text-align: center;
+}
+.adminLoginBtn button {
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(3 49 146);
+    color: #fff;
+    border: none;
+}
+
+
+/* AdminPanel Dashboard */
+#dashboardMainContainer{
+    display: flex;
+}
+.dashboard-sidebar{
+    width: 20%;
+    background: #323232;
+    min-height: 100vh;
+}
+.dashboard-contents_Container{
+    width: 80%;
+    background: #f4f6f9;
+}
+.dashboard-sidebar-users img {
+    margin-right:5px;
+    border: 2px solid #f685a1;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+h1.adminpanelLogo {
+    text-align: center;
+    color: #ebebeb;
+    font-size: 50px;
+}
+
+.dashboard-sidebar-users span {
+    position: absolute;
+    top: 25%;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.dashboard-sidebar-users {
+    position: relative;
+    padding-bottom:20px;
+    border-bottom:2px solid white;
+    text-align: center;
+    font-weight: bold;
+    padding-right: 40px;
+}
+ul.dashboard-sidebar-menus-lists{
+    padding-left: 0px;
+}
+ul.dashboard-sidebar-menus-lists li.liMainMenu {
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-size: 18px;
+    list-style: none;
+}
+
+ul.dashboard-sidebar-menus-lists li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+}
+ul.dashboard-sidebar-menus-lists li.liMainMenu a i{
+    padding-right: 10px;
+}
+ul.dashboard-sidebar-menus-lists {
+    /* padding: 20px; */
+    margin-top: 20px;
+}
+
+ul.dashboard-sidebar-menus-lists li.liMainMenu:hover {
+    background: #ac4242;
+    color: #fff;
+    transition: all 0.3ms;
+}
+ul.dashboard-sidebar-menus-lists li.liMainMenu.menuActive{
+    background: #ac4242;
+    color: #fff;
+}
+.dashboard-topNav {
+    background: #fff;
+    padding: 20px;
+}
+
+.dashboard-topNav a {
+    color: #534d4d;
+    font-size: 20px;
+    text-decoration: none;
+}
+#adminLogoutBtn{
+float: right;
+}
+.dashboard-contents{
+    padding: 50px 10px 10px 10px;
+}
+.dashboard-contents_main{
+    padding: 30px 20px 0px 20px;
+    border: 2px solid #cdcdcd;
+    background: #fff;
+    min-height: 600px;
+    height: 100%;
+}
+
+/* Add User */
+.dashboard-contents_main form{
+    width: 90%;
+    margin:0 auto;
+    padding: 10px;
+    border: 1px solid #cecfd0;
+    border-radius: 5px;
+    background-color: #7a7a7a;
+}
+.dashboard-contents_main form::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.dashboard-contents_main form input{
+    width: 100%;
+    height: 33px;
+    border: 1px solid #d6d7da;
+    border-radius: 5px;
+}
+.adFormInputConatiner{
+    margin-bottom: 10px;
+}
+div#adminAddFormConatiner{
+    padding-top: 50px;
+}
+.dashboard-contents_main form label{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#adFormBtn{
+    background: #534d4d;
+    border: 1px solid #fff;
+    color: white;
+    margin-top: 20px;
+    float: right;
+    height: 30px;
+    font-size: 13px;
+    padding:0px 15px;
+}
+
+.addAdminSuccess p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    background: rgb(166, 200, 166);
+    border-radius: 5px;
+    padding: 20px;
+}
+.addAdminError p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    background: rgb(210, 96, 81);
+    border-radius: 5px;
+    padding: 20px;
+}
+div.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+div.column{
+    width: 100%;
+    padding: 0px 10px;
+}
+div.column-0{
+    width: 42%;
+}
+div.column-1{
+    width: 58%;
+}
+.adminInsertHeading{
+    font-size: 18px;
+    border-bottom: 2px solid rgb(166, 16, 16);
+    color: #7b7c7d;
+    padding-bottom: 11px;
+    padding: 10px;
+    background: #738691;
+    color: #fff;
+    border-left: 4px solid rgb(166, 16, 16);
+    margin-bottom: 10px;
+}
+
+.section_content  table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.section_content table{
+    width: 100%;
+}
+.section_content table th{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #bbbaba;
+}
+.section_content table td{
+    font-size: 15px;
+    text-align: center;
+}
+.countUsers{
+    float: right;
+}
+
+/* Update Modal  */
+
+.dashboard-update_model form label{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.dashboard-update_model form input{
+    width: 100%;
+    height: 33px;
+    border: 1px solid #d6d7da;
+    border-radius: 5px;
+}
+.dashboard-update_model form{
+    width: 90%;
+    margin:0 auto;
+    padding: 10px;
+    border: 1px solid #cecfd0;
+    border-radius: 5px;
+    background-color: #7a7a7a;
+}
+.dashboard-update_model  form::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.subMenus{
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    background: rgb(170 79 77);
+    display: none;
+}
+.subMenus li{
+    padding: 10px;
+}
+.subMenus a{
+    padding: 10px 0px 20px 37px !important;
+    text-transform: none !important;
+}
+.subMenus a i{
+    font-size: 16px;
+}
+.subMenus li:hover{
+   background: #ad4242;
+}
+.mainMenuIconArrow{
+    float: right;
+    padding-right:15px;
+}
+.subMenuActive{
+    font-weight: bold;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background: rgb(126 86 85);
+}
+
+
+/* Product View  */
+.productDesTextArea{
+   
+        height: 80px;
+        width: 100%;
+      border-radius: 5px;
+      
+}
+img.productImages {
+    width: 100px;
+    height: 100px;
+}
+.dltAlertActive{
+    display: block;
+}
+#supplier{
+    display: block;
+    width: 100%;
+    height:100px ;
+}
+
+/* Order Product */
+.orderProductBtn{
+    background: rgb(151 199 210);
+    color: #fff;
+    
+}
+.orderBtns{
+    border-radius: 4px;
+    padding: 2px 10px;
+    height: 33px;
+    border: none;
+    font-size: 16px;
+}
+.align-text{
+    text-align: right;
+}
+#product_name{
+    background: #c5c4c4;
+    font-size: 17px;
+    padding: 3px 17px;
+    border: 1px solid #544c4c;
+    border-radius: 3px;
+}
+#orderProductLists{
+    margin-top: 20px;
+}
+.orderProductRow{
+    padding: 6px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 25px;
+
+}
+.supplierName{
+    margin-left: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #a1a1a1;
+}
+.supplierRows .row{
+    padding: 5px 0px;
+}
+.submitProductBtn{
+    margin-top: 20px;
+}
+.quantityStyle{
+    height: 33px;
+    background: #f1f1f1;
+    text-indent: 10px;
+    border: 1px solid #75cb75;
+    border-radius: 2px;
+}
+.appBtn{
+    border: none;
+    padding: 4px 8px;
+background: #ff5858;
+border-radius: 2px ;
+} 
+.removeOrderBtn{
+    background: #ff5858;
+    color: #fff;
+    float: right;
+}
+.poList{
+    border-bottom: 2px solid gray;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.poList p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c06868;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.poListContainers table td, .poListContainers table th,.poListContainers table {
+    border: none;
+    border-bottom: 1px dotted #b7b7b7;
+}
+.poListContainers table th{
+    padding: 12px 10px;
+}
+.poListContainers table td{
+    padding: 10px 10px;
+    font-size: 15px; 
+}
+.poOrderUpdateBtnConatiner button{
+    margin-top:10px ;
+    background: white;
+    border: 1px solid rgba(202, 192, 114, 0.667);
+    border-radius: 2px;
+    color: rgb(160, 91, 42);
+}
+.poOrderUpdateBtnConatiner button:hover{
+   color: #fff;
+   background: rgb(176, 100, 100);
+}
+.po-badge{
+        text-transform: uppercase;
+    padding: 3px 5px;
+    
+}
+.po-badge-pending{
+    border: 1px solid rgb(2, 1, 1);
+    background: rgb(229, 141, 101);
+}
+.po-badge-complete{
+    border: 1px solid rgb(5, 5, 5);
+    background: #96cd96;
+}
+.modal_header_bs{
+    background: bisque;
+}
+.modal_content_bs{
+    width: 130%;
+}
+.dashboard-update_model{
+    text-align: center;
+}
+.dashboard-update_model thead{
+    background: #dfdfdf;
+}
+.po-badge-incomplete{
+    border: 1px solid rgb(5, 5, 5);
+    background: #d3e725;
+}
+.appDeliveryHistoryBtn{
+    background: #65a2ce;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+.showDeliveryModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reportContainer .reportTypeConatainer{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.reportType{
+    border: 1px solid #889088;
+    padding: 10px 24px;
+    border-radius: 4px;
+    background: #f7efef;
+    font-size: 20px;
+    margin-left: 21px;
+    width: 100%;
+}
+.reportType:hover{
+    background: #c36868;
+    color: #000;
+}
+.align-right{
+    text-align: right;
+}
+.reportExportBtn{padding: 4px 15px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #8261ba;
+    margin-right: 13px;
+    font-size: 15px;}
+.reportType p{
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.reportExportBtn:hover{
+border: 1px solid #f684a1;
+background: #fff;
+color: #f684a1;
+}
+/* Admin Design */
+.adminUpdateModal{
+    width: 140%;
+}
+/* Permission Design  */
+#permissions{
+    background: #FFF;
+    padding: 15px;
+    border-radius: 8px;
+}
+#permissions .moduleName{
+font-weight: bold;
+text-transform: uppercase;
+}
+#permissions .moduleFunc{
+text-align: center;
+border: 1px solid #c1c1c1;
+cursor: pointer;
+}
+.permission .col-md-2{
+    width: 20%;
+}
+.permission{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.permission .col-md-3{
+    width: 20%;
+}
+.permissionActive{
+    background: #7dd87a;
+    color: #fff;
+    border: 1px solid #de2855;
+    transition: 0.3s;
+}
+.accessdenied img{
+    background: transparent;
+    
+    width: 47%;
+    height: 260px;
+    border-radius: 8%;
+}
+.accessdenied{
+    margin-top: 5%;
+    padding: 0 2%;
+    text-align: center;
+}
+.accessdenied p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}

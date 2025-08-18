@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgb(0 0 0);
+    backdrop-filter: blur(8px);
+    height: 50px;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+}
+.nav-items li a{
+    font-family: 'Poppins',sans-serif;
+    padding: 20px 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+    text-decoration: none;
+    font-size: 15px;
+}
+.menu ul{
+    display: flex;
+    /* right: 0; */
+}
+.menu ul li{
+    position:relative;
+}
+li{
+    padding-top: 10px;
+}
+.img h2{
+    padding-top: 5px;
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/main.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    
+}
+
+.main h1{
+    z-index: 999;
+}
+.main::before{
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.354);
+}
+
+.main button{
+    position: absolute;
+    margin-top: 14%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+    cursor:pointer;
+}
+.btn{
+    color: black;
+}
+.main button:hover{
+    background-color: rgba(128, 128, 128, 0.656);
+}
+
+.seller{
+    text-align: center;
+    padding-top: 20px;
+}
+.mainThree{
+    width: 100%;
+    /* height: 80vh; */
+}
+.flexThree{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 3vw;
+    position: relative;
+}
+.ThirdImg img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 15%;
+}
+
+.ThirdImg h2{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20%;
+}
+
+
+.quote{
+    background-image: url(../image/thirdSecImg.jpg);
+    width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+}
+.quote::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 75vh;
+    background-color: rgba(0, 0, 0, 0.286);
+}
+.quote h2{
+    z-index: 999;
+}
+.productMain{
+    width: 100%;
+    background-color: rgba(233,233,231,255);
+}
+.imgRight img{
+    object-fit: cover;
+    height: 700px;
+    padding-left: 4%;
+}
+.textLeft{
+    padding-left: 10%;
+    padding-top: 10%;
+   
+}
+.textLefth2{
+    font-size: 25px;
+}
+.textLeft p{
+    padding-top: 7%;
+    font-size: 17px
+}
+.textLeft button{
+    position: absolute;
+    margin-top: 70px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.productMain h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.line{
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+  .login_btn, .signup_btn {
+    width: 81px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: 9px;
+    
+    text-align: center;
+    line-height: 24px;
+    border-radius: 31px;
+    font: Josefin Sans, san seriff;
+    box-shadow: 0.5px 0.5px 3px 0.5px;
+    cursor: pointer;
+}
+.login_btn {
+    margin-right: 90px;
+}
+.login_btn a, .signup_btn a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li:hover .nav-dropdown{
+    display: block;
+    position:absolute;
+    left:0;
+    top:140%;
+    background:rgb(0, 0, 0, 0.5);
+    border-radius:7px;
+   
+    }
+.nav-dropdown{
+    display:none;
+}
+.nav-dropdown ul{
+    display:block;
+    margin:10px;
+    padding-left: 0px;
+}
+.nav-dropdown ul li{
+   width:140px;
+   padding: 10px;
+}
+.myaccDropDownLists:hover{
+    background: #767575;
+    border-radius: 8px;
+}
+.ThirdImg.product-col a {
+    text-decoration: none;
+}
+.cart_wishlist_icon{
+    /* position: absolute;
+    width: 50px;
+    top: 0;
+    right: 3%; */
+}
+
+.cart_wishlist_icon a img {
+width: 50px;
+}
+.cart_wishlist_icon a i {
+    font-size: 30px;
+    color: #ffffff;
+    }
+    
+    .cart_wishlist_icon {
+        /* width: 170px; */
+        padding: 10px;
+        /* right: 10px; */
+    }
+    
+    .cart_wishlist_icon a {
+        padding-left: 10px; 
+        text-decoration: none; 
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        /* width: 3%; */}
+    
+    
+    .cart_wishlist_icon a i:hover {
+    color: white;
+    }
+    .cartBtn{
+      
+        margin-top: 10px;
+        border: none;
+        background: rgb(220 218 19);
+        color: black;
+        width: 176px;
+        border-radius: 6px;
+        height: 47px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .wishlist{
+        background: rgb(199, 108, 108);
+        margin-left: 20px;
+    }
+    /* Product-buy */
+    .productDetails {
+        margin-top: 55px;
+        padding: 30px 200px 30px 200px;
+        position: relative;
+        background: #a8c8c7;
+        border-radius: 50px;
+        min-height: 100vh;
+    }
+    
+    .photo {
+        width: 500px;
+        height: 80vh;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px;
+    }
+    
+    .photo img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .productInfo {
+        position: absolute;
+        top: 6%;
+        left: 60%;
+    }
+    form.productQuantity label {
+        display: block;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    form.productQuantity input {
+        border-radius: 4px;
+        background: rgba(255, 244, 35, 0.369);
+        
+    }
+    
+   
